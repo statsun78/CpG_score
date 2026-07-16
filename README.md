@@ -11,7 +11,15 @@ Please downlaod `function.R` to compute CpG-level score.
   - `pval_v` : A vector of the p-values to test a variance differerence for all CpG sites.
   - `gID` : A list of genes annotated CpG sites.
 
-* The R function `wieght_gene` 
+* The R function `wieght_gene`
+
+  It computes the wieght of indivdidual genes when an adjaceny matrix for network graph is provided.
+
+  - `score` : Gene-level scores computed by `gene_scores`.
+  - `adjm` : An adjacency matrix for genetic network.
+  - `weight` : `"degree"`for degree-weight or `"topology"` for topolofical-weight.
+ 
+    
 
 
  
