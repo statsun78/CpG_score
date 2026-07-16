@@ -1,25 +1,31 @@
-## CpG_score
-(R codes for CpG score-based GSEA)
+# CpG_score
+R codes for CpG score-based Gene Set Enrichment Analysis (GSEA).
 
-Please downlaod `function.R` to compute CpG-level score.
+Please download `function.R` to compute the CpG-level score.
 
-* The R function `gene_scores`
-  
-  It computes the gene level score, aggregating individual CpG site level scores annotated to the correponding genes.
-  
-  - `pval_m` : A vector of the p-values to test a mean differerence for all CpG sites.
-  - `pval_v` : A vector of the p-values to test a variance differerence for all CpG sites.
-  - `gID` : A list of genes annotated CpG sites.
+---
 
-* The R function `wieght_gene`
+## Functions
 
-  It computes the wieght of indivdidual genes when an adjaceny matrix for network graph is provided.
+### 1. `gene_scores`
+It computes the gene-level score by aggregating individual CpG site-level scores annotated to the corresponding genes.
 
-  - `score` : Gene-level scores computed by `gene_scores`.
-  - `adjm` : An adjacency matrix for genetic network.
-  - `weight` : `"degree"`for degree-weight or `"topology"` for topolofical-weight.
- 
-    
+#### Arguments:
+* `pval_m`: A vector of p-values testing the mean difference for all CpG sites.
+* `pval_v`: A vector of p-values testing the variance difference for all CpG sites.
+* `gID`: A list of genes annotated to the CpG sites.
+
+---
+
+### 2. `weight_gene`
+It computes the weight of individual genes when an adjacency matrix for a genetic network graph is provided.
+
+#### Arguments:
+* `score`: Gene-level scores computed by `gene_scores`.
+* `adjm`: An adjacency matrix for the genetic network.
+* `weight`: Weighting method to use:
+  * `"degree"`: for degree-based weight.
+  * `"topology"`: for topological-based weight.
 
 
  
