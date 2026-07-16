@@ -67,7 +67,7 @@ names(sID) <- c("path1", "path2")
 library(fgsea)
 fgsea::fgsea(pathways = sID, stats = score, scoreType = "pos", eps = 0)
 fgsea::fgsea(pathways = sID, stats = wscore, scoreType = "pos", eps = 0)
-
+```
 
 ---
 
