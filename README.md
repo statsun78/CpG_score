@@ -72,7 +72,7 @@ fgsea::fgsea(pathways = sID, stats = wscore, scoreType = "pos", eps = 0)
 ---
 
 ## Reference
-Lee, M., Yoon S., and H. Sun (2026) A CpG score-based gene set enrichment test for analysis of DNA methylation data with a hierarchical structure, submitted.
+Lee, M., Yoon S., and H. Sun (2026) *A CpG score-based gene set enrichment test for analysis of DNA methylation data with a hierarchical structure*, submitted.
 
 
 
