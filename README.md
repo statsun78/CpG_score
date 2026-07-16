@@ -28,6 +28,8 @@ It computes the weight of individual genes when an adjacency matrix for a geneti
   * `"degree"`: for degree-based weight.
   * `"topology"`: for topological-based weight.
 
+---
+
 ## Example
 
 ```r
@@ -44,7 +46,7 @@ names(gID) <- gene
 # 2. Generate mock p-values for CpG sites
 set.seed(123)
 pval_m <- runif(10, 0, 0.001)
-pval_v <- runif(10, 0, 0.001) 
+pval_v <- runif(10, 0, 0.001)
 names(pval_m) <- names(pval_v) <- cpg
 
 # 3. Compute gene-level scores
@@ -66,6 +68,11 @@ library(fgsea)
 fgsea::fgsea(pathways = sID, stats = score, scoreType = "pos", eps = 0)
 fgsea::fgsea(pathways = sID, stats = wscore, scoreType = "pos", eps = 0)
 
+
+---
+
+## Reference
+Lee, M., Yoon S., and H. Sun (2026) A CpG score-based gene set enrichment test for analysis of DNA methylation data with a hierarchical structure, submitted.
 
 
 
