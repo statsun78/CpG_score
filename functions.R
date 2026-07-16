@@ -1,6 +1,6 @@
 library(dplyr)
 
-gene_scores <- function(pval_m, pval_v, gID) {
+gene_scores <- function(pval_m, pval_v, gID, eps = 1e-50) {
 
     ## =========================================================
     ## Step 1: Convert p-values to z-scores
