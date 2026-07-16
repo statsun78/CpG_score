@@ -14,6 +14,7 @@ It computes the gene-level score by aggregating individual CpG site-level scores
 * `pval_m`: A vector of p-values testing the mean difference for all CpG sites.
 * `pval_v`: A vector of p-values testing the variance difference for all CpG sites.
 * `gID`: A list of genes annotated to the CpG sites.
+* `eps`: The minimum p-value allowed. (Default: `1e-50`)
 
 ---
 
