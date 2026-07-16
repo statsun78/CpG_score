@@ -1,4 +1,5 @@
 library(dplyr)
+library(igraph)
 
 gene_scores <- function(pval_m, pval_v, gID, eps = 1e-50) {
 
