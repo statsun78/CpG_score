@@ -53,7 +53,6 @@ score <- gene_scores(pval_m, pval_v, gID)
 # 4. Compute network-weighted gene scores
 adjm <- matrix(0, length(gene), length(gene))
 adjm[1, 3] <- adjm[3, 1] <- adjm[2, 3] <- adjm[3, 2] <- 1
-
 wscore <- weight_gene(score, adjm)
 
 # 5. Define pathways for GSEA
