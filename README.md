@@ -1,7 +1,7 @@
 # CpG_score
 R codes for CpG score-based Gene Set Enrichment Analysis (GSEA).
 
-Please download `function.R` to compute the gene-level scores.
+Please download `function.R` to compute the gene-level scores from DNA metyhlation array data.
 
 ---
 
